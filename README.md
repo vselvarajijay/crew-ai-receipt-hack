@@ -1,28 +1,38 @@
+# Receipt Processing with Multi-Agents
+
+This project leverages CrewAI to design multiple agents for processing a receipt.
+
+### Key Learnings
+
+- Multi-agent processing can be slow.
+- Non-deterministic results may lead to agent errors.
+- Forecasting costs is challenging due to the unpredictable number of LLM queries made by each agent.
 
 ![screenshot](screenshot.png)
 
-# Setup and go
+## Setup and Go
 
-Setup the environment
+### Environment Setup
 
-```shell
-python3 -m venv .venv
-source .venv/bin/activate
-```
+1. Create a virtual environment:
+   ```shell
+   python3 -m venv .venv
+   source .venv/bin/activate
+   ```
 
-Set your OpenAI API key
+2. Set your OpenAI API key:
+   ```shell
+   export OPENAI_API_KEY=<your-api-key>
+   ```
 
-```shell
-export OPENAI_API_KEY=<your-api-key>
-```
+3. Install the required packages:
+   ```shell
+   pip install -r requirements.txt
+   ```
 
-Install requirements
+### Running a Test
 
-```shell
-pip install -r requirements.txt
-```
-
-Run a test
+To run a test, execute the following command:
 ```shell
 python main.py ./example/1000-receipt.jpg
 ```
