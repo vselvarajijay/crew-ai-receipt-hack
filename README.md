@@ -1,10 +1,7 @@
 
 ![screenshot](screenshot.png)
 
-
-
-# Run the samples
-
+# Setup and go
 
 Setup the environment
 
@@ -12,7 +9,6 @@ Setup the environment
 python3 -m venv .venv
 source .venv/bin/activate
 ```
-
 
 Set your OpenAI API key
 
@@ -26,6 +22,7 @@ Install requirements
 pip install -r requirements.txt
 ```
 
+Run a test
 ```shell
 python main.py ./example/1000-receipt.jpg
 ```
