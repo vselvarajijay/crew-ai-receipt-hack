@@ -1,3 +1,8 @@
+
+![screenshot](screenshot.png)
+
+
+
 # Run the samples
 
 
@@ -12,7 +17,7 @@ source .venv/bin/activate
 Set your OpenAI API key
 
 ```shell
-OPENAI_API_KEY=<your-api-key>
+export OPENAI_API_KEY=<your-api-key>
 ```
 
 Install requirements
@@ -22,5 +27,5 @@ pip install -r requirements.txt
 ```
 
 ```shell
-python main.py ./data/1000-receipt.jpg
+python main.py ./example/1000-receipt.jpg
 ```
